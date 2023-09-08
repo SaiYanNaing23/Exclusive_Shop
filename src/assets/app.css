@@ -15,3 +15,11 @@ body{
     line-height: 1.5;
     font-weight: 400;
 }
+a{
+    display: inline-block !important;
+    text-underline-offset: 5px !important;
+}
+.marginx{
+    margin: 116px 0 !important;
+}
+.alpha { color: #DB4444; }

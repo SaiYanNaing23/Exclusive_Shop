@@ -256,14 +256,31 @@
       </div>
     </div>
     <!-- Dekivery Info -->
-    <div class="row marginx text-center">
+    <div class="row text-center marginx">
       <div class="col-4">
-        <div>
-          1
+        <div class="cir-background position-relative">
+          <img src="@/assets/cir-background.svg" alt="">
+            <ion-icon name="airplane-outline" style="color:#eee"></ion-icon>
         </div>
+        <h4 class="mt-4">FREE AND FAST DELIVERY</h4>
+        <P>Free delivery for all orders over $140</P>
       </div>
-      <div class="col-4">2</div>
-      <div class="col-4">3</div>
+      <div class="col-4">
+        <div class="cir-background position-relative">
+          <img src="@/assets/cir-background.svg" alt="">
+              <ion-icon name="call-outline" style="color:#eee"></ion-icon>
+        </div>
+        <h4 class="mt-4">24/7 CUSTOMER SERVICE</h4>
+        <P>Friendly 24/7 customer support</P>
+      </div>
+      <div class="col-4">
+         <div class="cir-background position-relative">
+          <img src="@/assets/cir-background.svg" alt="">
+              <ion-icon name="cash-outline" style="color:#eee"></ion-icon>
+        </div>
+        <h4 class="mt-4">MONEY BACK GUARANTEE</h4>
+        <P>We reurn money within 30 days</P>
+      </div>
     </div>
   </div>
 </template>
@@ -390,5 +407,11 @@ ion-icon{
   z-index: 10;
   top: 2%;
   left: 2%;
+}
+.cir-background img{
+  position: absolute;
+  top: -28%;
+  right: 39%;
+  width: 90px;
 }
 </style>

@@ -32,10 +32,8 @@ export const login = async (req, res, next) => {
         const { email, password } = req.body;
         if (!email || !password) return res.status(400).json({ message : "All feilds are required.", success : false});
 
-        const user = await User.findOne({ email }).select("+password");
-        console.log("user when logging in: ", user);
+        const user = await User.findOne({ email });
         if (!user) return res.status(404).json({ message : "User not found.", success : false });
-
         const isMatch = await user.matchPassword(password);
         if (!isMatch) return res.status(400).json({ message : "Invalid credentials.", success : false });
 
